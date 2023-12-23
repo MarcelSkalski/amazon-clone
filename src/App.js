@@ -8,19 +8,29 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
+import Login from "./Login";
 
 function App() {
   return (
     // BEM
     <Router>
       <div className="app">
-        <Header />
         <Routes>
+          <Route
+            exact
+            path="/login"
+            element={
+              <>
+                <Login />
+              </>
+            }
+          />
           <Route
             exact
             path="/checkout"
             element={
               <>
+                <Header />
                 <Checkout />
               </>
             }
@@ -30,6 +40,7 @@ function App() {
             path="/"
             element={
               <>
+                <Header />
                 <Home />
               </>
             }
