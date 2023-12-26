@@ -5,8 +5,6 @@ import { useStateValue } from "./StateProvider";
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
 
-  console.log("this is the basket >>> ", basket);
-
   const formattedPrice = new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "EUR",
