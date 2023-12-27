@@ -12,14 +12,13 @@ import Login from "./Login";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Register from "./Register";
 
 function App() {
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      console.log("THE USER IS >>>", authUser);
-
       if (authUser) {
         dispatch({
           type: "SET_USER",
@@ -39,6 +38,15 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
+          <Route
+            exact
+            path="/register"
+            element={
+              <>
+                <Register />
+              </>
+            }
+          />
           <Route
             exact
             path="/login"

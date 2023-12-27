@@ -21,15 +21,7 @@ function Login() {
 
   const register = (e) => {
     e.preventDefault();
-
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((auth) => {
-        if (auth) {
-          navigate("/");
-        }
-      })
-      .catch((error) => alert(error.message));
+    navigate("/register");
   };
 
   return (
