@@ -6,6 +6,8 @@
 
 .checkoutProduct__info {
   padding-left: 20px;
+  position: relative;
+  flex: 1;
 }
 
 .checkoutProduct__info > button {
@@ -27,6 +29,13 @@
 }
 
 .checkoutProduct__title {
+  padding-right: 100px;
   font-size: 17px;
   font-weight: 700;
+}
+
+.checkoutProduct__price {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

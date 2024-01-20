@@ -1,17 +1,38 @@
-.checkout {
+.checkout__main {
   display: flex;
   padding: 20px;
   background-color: white;
   height: max-content;
 }
 
-.checkout__ad {
-  width: 100%;
-  margin-bottom: 10px;
+.checkout__left {
+  flex: 0.7;
+  margin-right: 20px;
+  position: relative;
+}
+
+.checkout__right {
+  flex: 0.3;
+}
+
+.checkout__titleContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid lightgray;
 }
 
 .checkout__title {
   margin-right: 10px;
   padding: 10px;
-  border-bottom: 1px solid lightgray;
+}
+
+.checkout__price {
+  padding: 10px;
+}
+
+.checkout__disclaimer {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 350px;
+  font-size: 14px;
 }
