@@ -5,10 +5,33 @@ import { useStateValue } from "./StateProvider";
 function CheckoutProduct({ id, image, title, price, rating, quantity }) {
   const [{ basket }, dispatch] = useStateValue();
 
+  const decreaseQuantity = () => {
+    dispatch({
+      type: "DECREASE_QUANTITY",
+      id: id,
+    });
+  };
+
   const removeFromBasket = () => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
-      id: id,
+      item: {
+        id: id,
+      },
+    });
+  };
+
+  const addToBasket = () => {
+    // dispatch the item into the data layer
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
     });
   };
 
@@ -28,7 +51,19 @@ function CheckoutProduct({ id, image, title, price, rating, quantity }) {
               <p>⭐️</p>
             ))}
         </div>
-        <p className="checkoutProduct__quantity">Quantity: {quantity}</p>
+        <p className="checkoutProduct__stock">In stock</p>
+        <p className="checkoutProduct__shipping">Eligible for FREE shipping</p>
+        <div className="checkoutProduct__quantity">
+          <span>
+            <button onClick={decreaseQuantity}>-</button>
+          </span>
+          <span>
+            <p>{quantity}</p>
+          </span>
+          <span>
+            <button onClick={addToBasket}>+</button>
+          </span>
+        </div>
         <button onClick={removeFromBasket}>Remove from Basket</button>
       </div>
     </div>
