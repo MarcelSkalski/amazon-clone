@@ -22,7 +22,7 @@ function Checkout() {
       <div className="checkout__main">
         <div className="checkout__left">
           <div>
-            <h3>Hello {user?.displayName ? user?.displayName : "Guest"}</h3>
+            <h3>Hello {user ? user?.displayName : "Guest"}</h3>
             <div className="checkout__titleContainer">
               <h2 className="checkout__title">Your Shopping Basket</h2>
               <p className="checkout__price">Price</p>
