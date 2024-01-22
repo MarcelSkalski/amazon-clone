@@ -50,7 +50,7 @@ function Checkout() {
         The shopping basket is a temporary place to store a list of your items
         and reflects each item's most recent price.
       </p>
-      <p className="checkout__disclaimer ">
+      <p className="checkout__lastDisclaimer ">
         Do you have a gift card or promotional code? We'll ask you to enter your
         claim code when it's time to pay.
       </p>

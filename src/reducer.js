@@ -12,6 +12,12 @@ const reducer = (state, action) => {
         basket: [...state.basket, action.item],
       };
 
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: [], // Set the basket to an empty array
+      };
+
     case "DECREASE_QUANTITY":
       const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.id
