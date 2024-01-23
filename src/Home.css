@@ -6,10 +6,6 @@
   max-width: 1500px;
 }
 
-.home__container {
-  overflow-x: hidden;
-}
-
 .home__row {
   display: flex;
   z-index: 1;

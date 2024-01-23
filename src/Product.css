@@ -24,6 +24,8 @@
 }
 
 .product > button {
+  height: 25px;
+  width: 150px;
   background: #f0c14b;
   border: 1px solid;
   margin-top: 10px;

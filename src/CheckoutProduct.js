@@ -41,7 +41,7 @@ function CheckoutProduct({ id, image, title, price, rating, quantity }) {
       <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
         <p className="checkoutProduct__price">
-          <strong>{price.toFixed(2)}</strong>
+          <strong>{price.toFixed(2).replace(".", ",")}</strong>
           <small>€</small>
         </p>
         <div className="checkoutProduct__rating">
