@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import Product from "./Product";
-import SpecialSection from "./SpecialSection";
-import TopDeal from "./TopDeal";
+import Product from "../Product/Product";
+import SpecialSection from "../SpecialSection/SpecialSection";
+import TopDeal from "../TopDeal/TopDeal";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 function Home() {
