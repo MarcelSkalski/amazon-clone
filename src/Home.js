@@ -1,18 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Product from "./Product";
 import SpecialSection from "./SpecialSection";
 import TopDeal from "./TopDeal";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 function Home() {
+  const images = [
+    "https://m.media-amazon.com/images/I/6175Ol5KP3L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71ZYCpZ4S+L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71CvS1DOvjL._SX3000_.jpg",
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // automatically change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://m.media-amazon.com/images/I/71ZYCpZ4S+L._SX3000_.jpg"
-          alt=""
-        />
+        <SwitchTransition>
+          <CSSTransition
+            key={currentImageIndex}
+            addEndListener={(node, done) => {
+              node.addEventListener("transitionend", done, false);
+            }}
+            classNames="fade"
+          >
+            <img
+              className="home__image"
+              src={images[currentImageIndex]}
+              alt=""
+            />
+          </CSSTransition>
+        </SwitchTransition>
 
         <div className="home__row">
           <SpecialSection
