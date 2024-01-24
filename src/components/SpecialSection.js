@@ -1,5 +1,5 @@
 import React from "react";
-import "./SpecialSection.css";
+import "../styles/SpecialSection.css";
 
 function SpecialSection({ title, image, message }) {
   return (

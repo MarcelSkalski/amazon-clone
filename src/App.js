@@ -1,14 +1,13 @@
-import "./App.css";
-import Checkout from "../components/Checkout/Checkout";
-import Header from "../components/Header/Header";
-import Home from "../components/Home/Home";
+import Checkout from "./pages/Checkout";
+import Header from "./components/Header";
+import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "../components/Login/Login";
+import Login from "./pages/Login";
 import { useEffect } from "react";
-import { auth } from "../firebase/firebase";
-import { useStateValue } from "../context/StateProvider";
-import Register from "../components/Register/Register";
-import Payment from "../components/Payment/Payment";
+import { auth } from "./firebase/firebase";
+import { useStateValue } from "./context/StateProvider";
+import Register from "./pages/Register";
+import Payment from "./pages/Payment";
 
 function App() {
   const [{}, dispatch] = useStateValue();

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Payment.css";
-import { useStateValue } from "../../context/StateProvider";
-import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
+import "../styles/Payment.css";
+import { useStateValue } from "../context/StateProvider";
+import CheckoutProduct from "../components/CheckoutProduct";
 import { Link } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import { useNavigate } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopDeal.css";
+import "../styles/TopDeal.css";
 
 function TopDeal({ title, image, savings, brand }) {
   return (
