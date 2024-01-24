@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Amazon Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that replicates the core functionalities of Amazon. Users can create an account, sign in, browse products on the homepage, add items to their shopping basket, adjust the quantity of items, and proceed to checkout (available only for signed-in users).
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Check out the live demo [here](https://clone-9ba89.web.app/)
 
-### `npm start`
+## Demo Account
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Feel free to use the following demo account to explore the application:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Email:** testemail@test.com
+* **Password:** test123
 
-### `npm test`
+If you prefer, you can also create a personalized account at your convenience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+* **User Authentication:** Users can create accounts or sign in using their credentials.
+* **Homepage:** Users can browse through a list of products and add items to their shopping basket.
+* **Shopping Basket:** Users can view and modify the items in their basket, including increasing / decreasing the amount of items or removing items entirely.
+* **Checkout:** If signed in, users can proceed to checkout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Home**
+![Home_Screenshot](https://github.com/MarcelSkalski/amazon-clone/assets/91550808/ccafc759-1c93-43d4-b4a2-57f9cfc498c8)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Shopping Basket**
+![Shopping_Basket_Screenshot](https://github.com/MarcelSkalski/amazon-clone/assets/91550808/5514775d-f575-48ae-8748-8da930bfdd82)
 
-### `npm run eject`
+**Checkout**
+![Checkout__Screenshot](https://github.com/MarcelSkalski/amazon-clone/assets/91550808/0a9f356f-fc28-4ee8-af50-dd408c979029)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **ReactJS:** The project is built using ReactJS, a JavaScript library for building user interfaces.
+* **Firebase:** Firebase is used for authentication and as a real-time database to store and manage user data.
+* **HTML/CSS:** The project utilizes HTML and CSS for structuring and styling the web pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    # Clone the repository:
+    git clone https://github.com/MarcelSkalski/amazon-clone.git
 
-## Learn More
+    # Go into the directory:
+    cd amazon-clone
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    # Install dependencies:
+    npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    # Run app in development mode:
+    npm start
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Finally, open [http://localhost:3000](http://localhost:3000) to view the app it in your browser.
