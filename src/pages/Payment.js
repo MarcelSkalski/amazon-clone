@@ -56,7 +56,7 @@ function Payment() {
           {/* Payment section - review items */}
           <div className="payment__section">
             <div className="payment__title">
-              <h3>Review items for delivery</h3>
+              <h3>Review items for delivery </h3>
             </div>
             <div className="payment__items">
               {/* Products */}
